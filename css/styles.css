@@ -4,6 +4,10 @@
     --accent-color:#2196F3;
     --text-color:#757575;
     --title-color:#212121;
+    --secondary-color:#FFFFFF;
+    --secondary-background-color:#2F303A;
+    --primari-background-color:#F5F4F5;
+
 
 
 }
@@ -15,40 +19,47 @@ text-decoration: none;
 }
 body{
     font-family:var(--primari-font-family);
+    color: var(--title-color);
+    border-color: var(--primari-background-color);
 }
-.logo{
-    
+.header{
+    background-color: var(--secondary-color);
+}
+.logo {   
 font-family: var(--secondary-font-family);
 font-weight: 700;
 font-size: 26px;
-line-height: 1,19;
+line-height: 1.19;
 
 letter-spacing: 0.03em;
 
-color: #2196F3;
+color:var(--accent-color);
 }
 .logo-header{
-    color: #000000;
+    color:var(--title-color);
 }
-/*
+
 .logo-footre{
-    color: #FFFFFF;
+    color:var(--secondary-color);
 }
-*/
+
 .nav-list-link{
-font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color:var(--title-color);
 }
+.nav-list .nav-list-link.current{
+    color: var(--accent-color);
+}
 .nav-list-link:hover,
 .nav-list-link:focus{
     color: var(--accent-color);
 }
+
+
 .contacts-mail{
- font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -61,7 +72,6 @@ color:var(--text-color);
     color:var(--accent-color);
 }
 .contacts-number{
-font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -69,25 +79,29 @@ letter-spacing: 0.02em;
 
 color:var(--text-color);
 }
+.hero{
+    background-color: var(--secondary-background-color);
+}
 .main-title{
-font-family: "Roboto", sans-serif;
 font-weight: 900;
 font-size: 44px;
-line-height: 1,36;
+line-height: 1.36;
 
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-/*
-color: #FFFFFF;
-*/
+
+color: var(--secondary-color);
+
 }
 
 .modal-btn{
-font-family: "Roboto", sans-serif;
 font-weight: 700;
 font-size: 16px;
-line-height: 1.9;
+line-height: 1.88;
+
+letter-spacing: 0.06em;
+cursor: pointer;
 
 color: #FFFFFF;
 background:var(--accent-color);
@@ -96,7 +110,11 @@ background:var(--accent-color);
 .modal-btn:focus{
  background:#188CE8;
 }
-.attribute-tilte{
+.title{
+    visibility: hidden;
+}
+
+.attribute-title{
 font-family:var(--primari-font-family);
 font-weight: 700;
 font-size: 14px;
@@ -109,8 +127,6 @@ color:var(--title-color);
 
 .attribute-text{
 font-family: var(--primari-font-family);
-font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 
@@ -119,7 +135,11 @@ letter-spacing: 0.03em;
 color: var(--text-color);
 
 }
-.section-tilte{
+.collectivity{
+    background-color:#F5F4FA;
+}
+
+.section-title{
 font-family: var(--primari-font-family);
 font-weight: 700;
 font-size: 36px;
@@ -129,22 +149,28 @@ letter-spacing: 0.03em;
 
 color: var(--title-color);
 }
+.collectivity-item{
+    background-color: var(--secondary-color);
+
+}
 .collectivity-title{
 font-family: var(--primari-font-family);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
-
+letter-spacing: 0.03em;
 color:var(--title-color);
 }
 .collectivity-text{
 font-family: var(--primari-font-family);
-font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
-
+letter-spacing: 0.03em;
 
 color:var(--text-color);
+}
+.footer{
+    background-color: var(--secondary-background-color);
 }
 .address-list-link{
 font-family:var(--primari-font-family);
@@ -152,15 +178,13 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
-
-
 letter-spacing: 0.03em;
-/*
-color: #FFFFFF;*/
+
+color: var(--secondary-color);
 }
 /*==============PORTFOLIO================*/
 
-.projects-nav-list-button{
+.projects-list-button{
 font-family: var(--primari-font-family);
 font-weight: 500;
 font-size: 16px;
@@ -168,16 +192,17 @@ line-height: 1.62;
 
 text-align: center;
 letter-spacing: 0.03em;
-
+cursor: pointer;
 color: var(--title-color);
+background-color: var(--primari-background-color);
 
 }
-.projects-nav-list-button:hover,
-.projects-nav-list-button:focus{
+.projects-list-button:hover,
+.projects-list-button:focus{
   color: #FFFFFF;
   background: var(--accent-color);
 }
-.portfolio-lis-titel{
+.portfolio-list-titel{
 font-family: var(--primari-font-family);
 font-weight: 700;
 font-size: 18px;
@@ -189,7 +214,6 @@ color: var(--title-color);
 }
 .portfolio-list-text{
 font-family: var(--primari-font-family);
-font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
 

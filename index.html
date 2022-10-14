@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -13,13 +13,16 @@
         <nav class="navigation">
             <a class="logo link" href="./index.html"> Web<span class="logo-header">Studio</span></a>
             <ul class="nav-list list">
-                <li class="nav-list-item"><a class="nav-list-link link" href="">Студія</a></li>
+                <li class="nav-list-item"><a class="nav-list-link current link" href="">Студія</a></li>
                 <li class="nav-list-item"><a class="nav-list-link link" href="./portfolio.html">Портфоліо</a></li>
                 <li class="nav-list-item"><a class="nav-list-link link" href="">Контакти</a></li>
             </ul>
         </nav>
-        <a class="contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="contacts-number link" href="tel:+380961111111">+380961111111</a> 
+        <ul>
+            <a class="contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contacts-number link" href="tel:+380961111111">+380961111111</a> 
+        </ul>
+     
        
     </header>
  <main>
@@ -28,28 +31,28 @@
         <button class="modal-btn" type="button">Замовити послугу</button>
     </section>
     <section class="attribute">
-        <h2>Особливості</h2>
+        <h2 class="title">Особливості</h2>
        <ul class="attribute-list list">
         <li class="attribute-item">
-          <h3 class="attribute-tilte">УВАГА ДО ДЕТАЛЕЙ</h3> 
+          <h3 class="attribute-title">УВАГА ДО ДЕТАЛЕЙ</h3> 
           <p class="attribute-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
         </li>
         <li class="attribute-item">
-           <h3 class="attribute-tilte">ПУНКТУАЛЬНІСТЬ</h3>
+           <h3 class="attribute-title">ПУНКТУАЛЬНІСТЬ</h3>
            <p class="attribute-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.  </p>
         </li>
         <li class="attribute-item">
-            <h3 class="attribute-tilte">ПЛАНУВАННЯ</h3>
+            <h3 class="attribute-title">ПЛАНУВАННЯ</h3>
             <p class="attribute-text">Так само консультація з широким активом значною мірою зумовлює.</p>
         </li>
         <li class="attribute-item">
-            <h3 class="attribute-tilte">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <h3 class="attribute-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="attribute-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
         </li>
        </ul> 
     </section>
     <section class="work">
-        <h2 class="section-tilte">Чим ми займаємося</h2>
+        <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="work-list list">
             <li>
                 <img src="./imges/about-img-1.jpg" alt="програмуваня" width="370"> 
@@ -65,22 +68,22 @@
     <section class="collectivity">
         <h2 class="section-tilte">Наша команда</h2>
         <ul class="collectivity-list list">
-            <li>
+            <li class="collectivity-item">
                 <img src="./imges/team_card_1.jpg" alt="Ігор Дем'яненко" width="270">
                 <h3 class="collectivity-title">Ігор Дем'яненко</h3>
                 <p class="collectivity-text">Product Designer</p>
             </li>
-            <li>
+            <li class="collectivity-item">
                 <img src="./imges/team_card_2.jpg" alt="Ольга Рєпіна" width="270">
                 <h3 class="collectivity-title">Ольга Рєпіна</h3>
                 <p class="collectivity-text">Frontend Developer</p>
             </li>
-            <li>
+            <li class="collectivity-item">
                 <img src="./imges/team_card_3.jpg" alt="Микола Тарасов" width="270">
                 <h3 class="collectivity-title">Микола Тарасов</h3>
                 <p class="collectivity-text">Marketing</p>
             </li>
-            <li>
+            <li class="collectivity-item">
                 <img src="./imges/team_card_4.jpg" alt="Михайло Єрмаков" width="270">
                 <h3 class="collectivity-title">Михайло Єрмаков</h3>
                 <p class="collectivity-text">UI Designer</p>
@@ -88,7 +91,7 @@
         </ul>
     </section>
  </main>
-    <footer>
+    <footer class="footer">
         <a class="logo link" href="./index.html">Web<span class="logo-footre">Studio</span></a>
         <address class="address">
             <ul class="address-list list">
