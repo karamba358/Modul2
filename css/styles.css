@@ -79,6 +79,10 @@ letter-spacing: 0.02em;
 
 color:var(--text-color);
 }
+.contacts-number:hover,
+.contacts-number:focus{
+    color:var(--accent-color);
+}
 .hero{
     background-color: var(--secondary-background-color);
 }
@@ -175,12 +179,15 @@ color:var(--text-color);
 .address-list-link{
 font-family:var(--primari-font-family);
 font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 
 color: var(--secondary-color);
+}
+.mail,
+.tel{
+    color:rgba(255, 255, 255, 60%) 
 }
 /*==============PORTFOLIO================*/
 
